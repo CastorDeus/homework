@@ -1,14 +1,13 @@
-function fibo()
+function fibo(n)
 {
-    var result = 0;
-    a = 1;
-    b = 1;
-    for(i = 3; i++; i<=n)
+    if (n<=1) 
     {
-        result = a + b;
+        return n;
     }
-    return result;
+    else
+    {
+        return fibo(n-1) + fibo(n-2);
+    }
 }
-var x = 0;
-x = fibo(3);
-document.write(x);
+var x = 7;
+alert( fibo(x) );
