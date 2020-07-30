@@ -10,4 +10,4 @@ function fibo(n)
     }
 }
 var x = 7;
-alert( fibo(x) );
+console.log( fibo(x) );
